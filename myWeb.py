@@ -9,7 +9,7 @@ def home():
     patient =  {
         "thai" : ThaiPatient()
     } 
-    return render_template('myTemplate.html',**patient["thai"]())
+    return render_template('myTemplate.html',**patient["thai"])
 
 if __name__ == '__main__':
  app.debug = True

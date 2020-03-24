@@ -1,11 +1,8 @@
 from covid19uncle import ThaiCovid19
 
 class ThaiPatient(object):
-
-  def __init__(self):
-    pass
-
-  def __call__(self):
+  """Status for covid-19 patients in Thailand"""
+  def __new__(cls):
     thai = ThaiCovid19()
     patient = {
       'update' : thai.get('อัพเดต'),
