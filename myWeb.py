@@ -1,23 +1,15 @@
 from flask import Flask, render_template
 
-from covid19 import patient
+from covid19 import ThaiPatient
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    moew = {
-        "Day" : patient["update"]() ,
-        "sum" : patient["cumulative"]() ,
-        "new" : patient["new"]() ,
-        "severe" : patient["severe"]() ,
-        "died" : patient["dead"]() ,
-        "refer" : patient["references"]() ,
-        "goHome" : patient["goHome"]()
+    patient =  {
+        "thai" : ThaiPatient()
     } 
-    return render_template('myTemplate.html',**moew)
-
-
+    return render_template('myTemplate.html',**patient["thai"]())
 
 if __name__ == '__main__':
  app.debug = True
