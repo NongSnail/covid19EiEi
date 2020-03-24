@@ -1,18 +1,19 @@
 from flask import Flask, render_template
-import covid19
+
+from covid19 import patient
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     moew = {
-        "Day" : covid19.upDate ,
-        "sum" : covid19.cumulative ,
-        "new" : covid19.new ,
-        "severe" : covid19.severe ,
-        "died" : covid19.died ,
-        "refer" : covid19.refer ,
-        "goHame" : covid19.goHome
+        "Day" : patient["update"]() ,
+        "sum" : patient["cumulative"]() ,
+        "new" : patient["new"]() ,
+        "severe" : patient["severe"]() ,
+        "died" : patient["dead"]() ,
+        "refer" : patient["references"]() ,
+        "goHome" : patient["goHome"]()
     } 
     return render_template('myTemplate.html',**moew)
 
