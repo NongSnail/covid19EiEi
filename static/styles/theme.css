@@ -92,7 +92,7 @@ h5 {
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,81,47,1) 0%, rgba(221,36,118,1) 100%);
-    animation: animate 6s linear infinite;
+    animation: animate 16s linear infinite;
     opacity: 0.5;
 }
 .square span:nth-child(2) {
@@ -104,7 +104,7 @@ h5 {
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,81,47,1) 0%, rgba(221,36,118,1) 100%);
-    animation: animate 4s linear infinite;
+    animation: animate 14s linear infinite;
     opacity: 0.3;
 }
 .square span:nth-child(3) {
@@ -116,7 +116,7 @@ h5 {
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,81,47,1) 0%, rgba(221,36,118,1) 100%);
-    animation: animate2 10s linear infinite;
+    animation: animate2 20s linear infinite;
     opacity: 0.5;
 }
 @keyframes animate
