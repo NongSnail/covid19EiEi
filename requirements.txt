@@ -1,3 +1,4 @@
-Flask
-gunicorn
-covid19uncle
+Flask==1.1.1
+gunicorn==20.0.4
+# covid19uncle
+covid19-open-api==0.0.2
